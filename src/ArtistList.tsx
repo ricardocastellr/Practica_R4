@@ -8,7 +8,7 @@ import { Artist } from './types/artist-types';
 
 export default class ArtistList extends Component<Artist>{
         state = {
-            dataSource: new ListView.DataSource ({rowHasChanged: (r1: , r2) => r1 !== r2})
+            dataSource: new ListView.DataSource ({rowHasChanged: (r1, r2) => r1 !== r2})
         }
 
     updateDataSource = (data) => {

@@ -12,6 +12,7 @@ export default class HomeView extends Component<Artist> {
     state = {
         artists: null
     }
+    
     componentDidMount () {
         getMusicData(). then(data => this.setState({ artists: data}))
     }
