@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
 
 const scenes: void = Actions.create(
   <Scene key="root">
-    {/* <Scene key="login" component={LoginView} hideNavBar /> */}
-    <Scene key="home" component={HomeView} hideNavBar />
+     <Scene key="login" component={LoginView} hideNavBar />
+     <Scene key="home" component={HomeView} initial={true} hideNavBar />
   </Scene>
 )
 
