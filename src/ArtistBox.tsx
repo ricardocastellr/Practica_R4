@@ -6,6 +6,13 @@ import {
     Image
 } from 'react-native';
 
+interface Props {
+    artist: {
+        image: string,
+        name: string,
+    }
+}
+
 export default class ArtistBox extends Component<Props> {
     render() {
         const {image, name} = this.props.artist
